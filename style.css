@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #e9f5f2; /* Fundo neutro com leve tom verde */
+    padding: 20px;
+    text-align: center;
+}
+
+:root {
+    --button-off: #c0392b;
+    --button-on: #3CB371;
+    --button-temp: #D2691E;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.controles-ligar-ac {
+    display: flex; 
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-on{
+    background-color: var(--button-on);
+}
+
+.button-off{
+    background-color: var(--button-off);
+}
+
+.button-on ,.button-off {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 1.15rem;
+    width: 150px;
+    height: 70px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.button-temp-aum{
+    background-color: var(--button-temp);
+}
+
+.button-temp-dmn{
+    background-color: var(--button-temp);
+}
+
+
+.button-temp-aum ,.button-temp-dmn {
+    font-family: 'Poppins', Arial, sans-serif;
+    transform: translateY(10px);
+    font-size: 1.15rem;
+    width: 150px;
+    height: 70px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-temp-aum:hover ,.button-temp-dmn:hover{
+    transform: translateX(1.05);
+}
+
+.dados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.dados-internos,
+.dados-externos {
+    flex: 1 1 45%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
