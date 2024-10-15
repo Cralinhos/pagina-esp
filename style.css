@@ -137,7 +137,6 @@ a:hover{
     font-size: large;
     padding: 30px;
     display: flex;
-    row-gap: 5px;
     flex-direction: column;
 }
 
@@ -145,8 +144,10 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    width: 150px;
+    width: 150px; /* Largura fixa para menus pequenos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
+
 
 ul li {
     position: relative;
@@ -154,11 +155,13 @@ ul li {
 
 .submenu {
     position: absolute;
-    left: 100%; /* Alterado para 100% para alinhamento correto */
+    left: 100%; /* Alinhamento correto */
     top: 0;
     display: none;
-    background-color: white; /* Adicionando fundo para submenu */
-    border: 1px solid #ccc;
+    background-color: white; /* Fundo para submenu */
+    border: 1px solid #ccc; /* Borda do submenu */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
     z-index: 1000; /* Para garantir que o submenu fique acima de outros elementos */
 }
 
@@ -168,13 +171,19 @@ ul li a {
     padding: 5px;
     color: black;
     border: 1px solid #ccc;
-    transition: background-color 0.3s; /* Transição suave para hover */
+    transition: var(--transition)
 }
 
 ul li a:hover {
     background-color: #f0f0f0; /* Destaca o item ao passar o mouse */
+    color: var(--button-on); /* Muda a cor do texto ao passar o mouse */
 }
 
 li:hover .submenu {
     display: block;
+}
+
+.salas{
+    margin-top: 5px;
+    border-radius: 5px;
 }
