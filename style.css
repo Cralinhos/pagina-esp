@@ -128,7 +128,7 @@ a:hover{
     margin: 0 auto;
     padding: 50px;
     background-color: #ffffff;
-    border-radius: 15px;
+    border-radius: 3px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
@@ -161,7 +161,6 @@ ul li {
     background-color: white; /* Fundo para submenu */
     border: 1px solid #ccc; /* Borda do submenu */
     border-radius: 5px; /* Cantos arredondados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
     z-index: 1000; /* Para garantir que o submenu fique acima de outros elementos */
 }
 
@@ -186,4 +185,39 @@ li:hover .submenu {
 .salas{
     margin-top: 5px;
     border-radius: 5px;
+}
+
+.salas-monitoramento {
+    width: 250px; /* Largura da seção de monitoramento */
+    height: 100%;
+    padding: 12px; /* Espaçamento interno */
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 3px; /* Cantos arredondados */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    position: fixed; /* Fixa a posição na tela */
+    top: 0; /* Fica no topo */
+    right: 0; /* Alinha à direita */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.monitor{
+    box-shadow: none;
+    border: none;
+}
+
+.monitor-item {
+    padding: 10px; /* Espaçamento interno para os itens */
+    border-radius: 5px; /* Cantos arredondados */
+    transition: background-color 0.3s ease; /* Transição suave para hover */
+    cursor: context-menu; /* Muda o cursor para indicar que é clicável */
+}
+
+.selecao-h2{
+    margin-top: -60px;
 }
