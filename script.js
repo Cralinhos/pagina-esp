@@ -1,11 +1,10 @@
-function removeSuccess() {
-    $('.button').removeClass('success');
-  }
-  
-  $(document).ready(function() {
-    $('.button').click(function() {
-      $(this).addClass('success');
-      setTimeout(removeSuccess, 3000);
+function toggleContainer(acId) {
+    const containers = document.querySelectorAll('.container');
+    containers.forEach(container => {
+        if (container.id === acId) {
+            container.style.display = container.style.display === 'none' ? 'block' : 'none';
+        } else {
+            container.style.display = 'none';
+        }
     });
-  });
-  
+}

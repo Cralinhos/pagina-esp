@@ -1,20 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-
 body {
     font-family: 'Poppins', Arial, sans-serif;
     background-color: #e9f5f2; /* Fundo neutro com leve tom verde */
-    padding: 20px;
     text-align: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
 }
 
 :root {
     --button-off: #c0392b;
     --button-on: #3CB371;
     --button-temp: #D2691E;
+    --transition: ease 0.5s;
+    --color-hover: #dbdbdb;
 }
 
 .container {
+    z-index: 2;
+    transform: translateY(-150%);
+    position: relative; 
+    height: 100%;
     max-width: 900px;
     margin: 0 auto;
     padding: 30px;
@@ -25,16 +32,24 @@ body {
 }
 
 .titulo {
-    text-align: center;
-    display: flex;
     padding: 2rem;
-    justify-content: center;
 }
 
 .controles-ligar-ac {
     display: flex; 
     justify-content: center;
     gap: 10px;
+}
+
+
+a{
+    transition: var(--transition);
+}
+
+a:hover{
+    transform: scale(1.06);
+    background-color: var(--color-hover);
+    opacity: 0.7;
 }
 
 .button-on{
@@ -88,8 +103,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .dados-internos,
@@ -103,4 +117,64 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
+}
+
+.salas-ac {
+    position: relative;
+    right: 44%;
+    height: 100vh;
+    max-width: 200px;
+    z-index: 0;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.selecao{
+    font-size: large;
+    padding: 30px;
+    display: flex;
+    row-gap: 5px;
+    flex-direction: column;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 150px;
+}
+
+ul li {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    left: 100%; /* Alterado para 100% para alinhamento correto */
+    top: 0;
+    display: none;
+    background-color: white; /* Adicionando fundo para submenu */
+    border: 1px solid #ccc;
+    z-index: 1000; /* Para garantir que o submenu fique acima de outros elementos */
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s; /* Transição suave para hover */
+}
+
+ul li a:hover {
+    background-color: #f0f0f0; /* Destaca o item ao passar o mouse */
+}
+
+li:hover .submenu {
+    display: block;
 }
