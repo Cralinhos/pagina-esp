@@ -115,7 +115,7 @@ body {
     top: 0; /* Fica no topo */
     left: 0; /* Alinha à direita */
     text-align: center; /* Alinha o texto à esquerda */
-    z-index: 0;
+    z-index: 1;
 }
 
 .selecao{
@@ -133,7 +133,7 @@ body {
     background-color: white; /* Fundo para submenu */
     border: 1px solid #ccc; /* Borda do submenu */
     border-radius: 5px; /* Cantos arredondados */
-    z-index: 1000; /* Para garantir que o submenu fique acima de outros elementos */
+    z-index: 1; /* Para garantir que o submenu fique acima de outros elementos */
 }
 
 ul {
@@ -207,6 +207,9 @@ h2{
     margin-top: -30px;
 }
 
-@media (min-width: 1024px){
-    
+@media (min-width: 468px){
+    .container{
+        max-width: 50%;
+        
+    }
 }
