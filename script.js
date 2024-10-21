@@ -8,4 +8,3 @@ function toggleContainer(acId) {
         }
     });
 }
-

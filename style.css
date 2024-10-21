@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Poppins', Arial, sans-serif;
-    background-color: #e9f5f2; /* Fundo neutro com leve tom verde */
+    background-color: #e9f5f2;
     text-align: center;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -14,7 +14,7 @@ body {
     --button-on: #3CB371;
     --button-temp: #D2691E;
     --transition: ease 0.6s;
-    --color-hover: rgba(219, 219, 219, 0.7); /* 30% de opacidade */
+    --color-hover: rgba(219, 219, 219, 0.7);
 
 }
 
@@ -29,7 +29,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
     text-align: center;
-    transform: translateY(23%);
+    transform: translateY(22%);
 }
 
 .titulo {
@@ -37,25 +37,29 @@ body {
 }
 
 .controles-ligar-ac {
-    display: flex; 
+    display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.button-on:hover, .button-off:hover, .button-temp-aum:hover, .button-temp-dmn:hover{
+.button-on:hover,
+.button-off:hover,
+.button-temp-aum:hover,
+.button-temp-dmn:hover {
     background-color: var(--color-hover);
     color: var(--button-temp);
 }
 
-.button-on{
+.button-on {
     background-color: var(--button-on);
 }
 
-.button-off{
+.button-off {
     background-color: var(--button-off);
 }
 
-.button-on ,.button-off {
+.button-on,
+.button-off {
     font-family: 'Poppins', Arial, sans-serif;
     font-size: 1.15rem;
     width: 150px;
@@ -68,7 +72,8 @@ body {
     transition: var(--transition);
 }
 
-.button-temp-aum ,.button-temp-dmn {
+.button-temp-aum,
+.button-temp-dmn {
     font-family: 'Poppins', Arial, sans-serif;
     margin-top: 7px;
     font-size: 1.15rem;
@@ -106,19 +111,27 @@ body {
 .salas-ac {
     display: flex;
     justify-content: center;
-    width: 250px; /* Largura da seção de monitoramento */
+    width: 250px;
+    /* Largura da seção de monitoramento */
     height: 100%;
-    padding: 10px; /* Espaçamento interno */
-    background-color: #ffffff; /* Fundo branco */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    position: fixed; /* Fixa a posição na tela */
-    top: 0; /* Fica no topo */
-    left: 0; /* Alinha à direita */
-    text-align: center; /* Alinha o texto à esquerda */
+    padding: 10px;
+    /* Espaçamento interno */
+    background-color: #ffffff;
+    /* Fundo branco */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+    position: fixed;
+    /* Fixa a posição na tela */
+    top: 0;
+    /* Fica no topo */
+    left: 0;
+    /* Alinha à direita */
+    text-align: center;
+    /* Alinha o texto à esquerda */
     z-index: 1;
 }
 
-.selecao{
+.selecao {
     font-size: large;
     padding: 30px;
     display: flex;
@@ -127,21 +140,29 @@ body {
 
 .submenu {
     position: absolute;
-    left: 100%; /* Alinhamento correto */
+    left: 100%;
+    /* Alinhamento correto */
     top: 0;
+    width: 100px;
     display: none;
-    background-color: white; /* Fundo para submenu */
-    border: 1px solid #ccc; /* Borda do submenu */
-    border-radius: 5px; /* Cantos arredondados */
-    z-index: 1; /* Para garantir que o submenu fique acima de outros elementos */
+    background-color: white;
+    /* Fundo para submenu */
+    border: 1px solid #ccc;
+    /* Borda do submenu */
+    border-radius: 5px;
+    /* Cantos arredondados */
+    z-index: 1;
+    /* Para garantir que o submenu fique acima de outros elementos */
 }
 
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    width: 150px; /* Largura fixa para menus pequenos */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 215px;
+    /* Largura fixa para menus pequenos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
 }
 
 
@@ -159,57 +180,71 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: #f0f0f0; /* Destaca o item ao passar o mouse */
-    color: var(--button-on); /* Muda a cor do texto ao passar o mouse */
+    background-color: #f0f0f0;
+    /* Destaca o item ao passar o mouse */
+    color: var(--button-on);
+    /* Muda a cor do texto ao passar o mouse */
 }
 
 li:hover .submenu {
     display: block;
 }
 
-.salas{
+.salas {
     margin-top: 5px;
     border-radius: 5px;
 }
 
 .salas-monitoramento {
-    width: 250px; /* Largura da seção de monitoramento */
+    width: 250px;
+    /* Largura da seção de monitoramento */
     height: 100%;
-    padding: 10px; /* Espaçamento interno */
-    background-color: #ffffff; /* Fundo branco */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    position: fixed; /* Fixa a posição na tela */
-    top: 0; /* Fica no topo */
-    right: 0; /* Alinha à direita */
-    text-align: left; /* Alinha o texto à esquerda */
+    padding: 10px;
+    /* Espaçamento interno */
+    background-color: #ffffff;
+    /* Fundo branco */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+    position: fixed;
+    /* Fixa a posição na tela */
+    top: 0;
+    /* Fica no topo */
+    right: 0;
+    /* Alinha à direita */
+    text-align: left;
+    /* Alinha o texto à esquerda */
     z-index: 0;
 }
 
-h2{
+h2 {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
 }
 
-.monitor{
+.monitor {
     box-shadow: none;
     border: none;
 }
 
 .monitor-item {
-    padding: 10px; /* Espaçamento interno para os itens */
-    border-radius: 5px; /* Cantos arredondados */
-    transition: background-color 0.3s ease; /* Transição suave para hover */
-    cursor: context-menu; /* Muda o cursor para indicar que é clicável */
+    padding: 10px;
+    /* Espaçamento interno para os itens */
+    border-radius: 5px;
+    /* Cantos arredondados */
+    transition: background-color 0.3s ease;
+    /* Transição suave para hover */
+    cursor: context-menu;
+    /* Muda o cursor para indicar que é clicável */
 }
 
-.selecao-h2{
+.selecao-h2 {
     margin-top: -30px;
 }
 
-@media (min-width: 468px){
-    .container{
+@media (min-width: 468px) {
+    .container {
         max-width: 50%;
-        
+
     }
 }

@@ -1,73 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-            <div class="salas-ac">
-                <section class="selecao">
-                <h2 class="selecao-h2">Salas</h2>
-                    <ul>
-                        <li>
-                            <a href="#" class="salas">Sala Alunos 1</a>
-                            <ul class="submenu">
-                                <li><a href="#" onclick="toggleContainer('ac1')">AC 1</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
-            </div>
 
-        
-        <div id="ac1" class="container" style="display: none;">
-            <section class="titulo">
-                <h1>Controle do EsP Sala Alunos 1 - AC 1</h1>
-            </section>
-            <section class="controles-ligar-ac">
-                <a href="#"><button class="button-on">Ligar</button></a>
-                <a href="#"><button class="button-off">Desligar</button></a>
-            </section>
-            <section class="controles-ligar-ac">
-                <a href="#"><button class="button-temp-aum">Aumentar</button></a>
-                <a href="#"><button class="button-temp-dmn">Diminuir</button></a>
-            </section>
-            <section class="Dados">
-                <section class="dados">
-                    <section class="dados-internos">
-                        <div class="dado"><p>Temperatura Interna:</p></div>
-                        <div class="dado"><p>Umidade:</p></div>
-                    </section>
-                    <section class="dados-externos">
-                        <div class="dado"><p>Temperatura Externa:</p></div>
-                        <div class="dado"><p>Presença Detectada:</p></div>
-                    </section>         
+<body>
+    <div class="salas-ac">
+        <section class="selecao">
+            <h2 class="selecao-h2">Salas</h2>
+            <ul>
+                <li>
+                    <a href="#" class="salas">Fábrica de Inovações</a>
+                    <ul class="submenu">
+                        <li><a href="#" onclick="toggleContainer('ac1')">AC</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+
+    <div id="ac1" class="container" style="display: none;">
+        <section class="titulo">
+            <h1>Controle do EsP Sala Alunos 1 - AC 1</h1>
+        </section>
+        <section class="controles-ligar-ac">
+            <a href="#"><button class="button-on">Ligar</button></a>
+            <a href="#"><button class="button-off">Desligar</button></a>
+        </section>
+        <section class="controles-ligar-ac">
+            <a href="#"><button class="button-temp-aum">Aumentar</button></a>
+            <a href="#"><button class="button-temp-dmn">Diminuir</button></a>
+        </section>
+        <section class="Dados">
+            <section class="dados">
+                <section class="dados-internos">
+                    <div class="dado">
+                        <p>Temperatura Interna:</p>
+                    </div>
+                    <div class="dado">
+                        <p>Umidade:</p>
+                    </div>
+                </section>
+                <section class="dados-externos">
+                    <div class="dado">
+                        <p>Temperatura Externa:</p>
+                    </div>
+                    <div class="dado">
+                        <p>Presença Detectada:</p>
+                    </div>
                 </section>
             </section>
-        </div>
-    
-        <div class="salas-monitoramento">
-            <section class="selecao-monitoramento">
-                <h2>Monitoramento</h2>
-                <ul class="monitor">
-                    <li class="monitor-item">Sala 1: </li>
-                    <li class="monitor-item">Sala 2: </li>
-                    <li class="monitor-item">Sala 3: </li>
-                    <li class="monitor-item">Sala 4: </li>
-                    <li class="monitor-item">Sala 5: </li>
-                    <li class="monitor-item">Sala 6: </li>
-                    <li class="monitor-item">Sala 7: </li>
-                    <li class="monitor-item">Sala 8: </li>
-                    <li class="monitor-item">Sala 9: </li>
-                    <li class="monitor-item">Sala 10: </li>
-                </ul>
-            </section>
-        </div>
+        </section>
+    </div>
+
+    <div class="salas-monitoramento">
+        <section class="selecao-monitoramento">
+            <h2>Monitoramento</h2>
+            <ul class="monitor">
+                <li class="monitor-item">Fábrica de Inovações: </li>
+            </ul>
+        </section>
+    </div>
 
     </div>
 
 </body>
 <script src="script.js"></script>
+
 </html>
